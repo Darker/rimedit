@@ -6,12 +6,30 @@ function RimEditorConfigPopup() {
   popup.className = "popup hidden";
   var close = document.createElement("div");
   close.className = "close";
+  close.title = "Close";
   close.onclick = function() {
     _this.close();
   }
   popup.appendChild(close);
   
   var visible = false;
+  
+  //Window will be destroyed on close, not hidden
+  this.destroyOnClose = true;
+  //Allows to unset ather references to window upon destroy
+  this.ondestroy = null;
+  //Event callbacks
+  this.onfocus = null;
+  this.onblur = null;
+  //Active or not
+  this.active = false;
+  /** Variables for managing multiple popups **/
+  this.popupAbove = null;
+  this.popupBelow = null;
+  //Name for the window manager
+  this.name = null;
+  //Actual manager refference
+  this.manager = null;
   /** Child management**/
   this.elements = [];
   this.addTextInput = function(comment, icon, ref, refName) {
@@ -51,17 +69,44 @@ function RimEditorConfigPopup() {
     }
     this.textDiv.innerHTML = string;
   }
-  //CSS
+  /** Appearance **/
   this.addClass = function(cls) {
     popup.addClass(cls);
   }
-  //Window will be destroyed on close, not hidden
-  this.destroyOnClose = true;
-  //Allows to unset ather references to window upon destroy
-  this.ondestroy = null;
-  //Name for the window manager
-  this.name = null;
+  this.setZIndex = function(num) {
+    //Check if this is a managed popup
+    if(this.manager!=null) {
+      //Cap the z-indexes properly
+      if(num>this.manager.topZIndex) {
+        num = this.manager.topZIndex;
+      }
+      if(num<this.manager.bottomZIndex) {
+        num = this.manager.bottomZIndex;
+      }
+    }
+    
+    popup.style.zIndex = num;
+    this.zIndex = num;
+    if(this.popupBelow!=null) {
+      this.popupBelow.setZIndex(num-1);
+    }
+  }
   
+  //Focus and blur events
+  this.focus = function() {
+    if(typeof this.onfocus=="function") {
+      this.onfocus();
+    }
+    popup.addClass("active");
+    this.active = true;
+  }
+  this.blur = function() {
+    if(typeof this.onblur=="function") {
+      this.onblur();
+    }
+    popup.removeClass("active");
+    this.active = false;
+  }
   /** HIDE show methods**/
   
   this.hide = function() {
@@ -72,7 +117,7 @@ function RimEditorConfigPopup() {
     sb_windowTools.centerElementOnScreenFixed(popup);
   }  
   
-  this.show = function(blink) {
+  this.show = function(blink, nofocus) {
     if(!visible) {
       popup.removeClass("hidden");
       if(popup.parentNode==null) {
@@ -85,6 +130,10 @@ function RimEditorConfigPopup() {
     }
     else
       this.blink(2);
+      
+    if(nofocus!==false) {
+      this.focus();
+    }
   }
   this.close = function() {
     if(this.destroyOnClose)
@@ -98,9 +147,14 @@ function RimEditorConfigPopup() {
       this.ondestroy();
       delete this.ondestroy();
     }
+    delete this.elements;
+    
     window.removeEventListener("mouseup", mouseupListener);
     window.removeEventListener("mouseout", mouseoutlistener);  
     document.body.removeChild(popup);
+    
+    popup = null;
+    close = null;
   }
   
   /** Events allowing the popup to be movable**/
@@ -108,6 +162,9 @@ function RimEditorConfigPopup() {
   var origpos = [0,0];
   var dragged = false;
   popup.onmousedown = function(event) {
+    //Focus the popup
+    _this.focus();
+    
     //First check if the below element does not mind dragging
     var target = event.target?event.target:event.srcElement;
     if(target.tagName.toLowerCase()=="input"||target.tagName.toLowerCase()=="textarea"||target.tagName.toLowerCase()=="select")
@@ -160,26 +217,46 @@ function RimEditorConfigPopup() {
   
 }
 function RimEditorPopupManager() {
+  //Popup list
   var popups = [];
+  //Self reference
   var _this = this;
-  
+  //Opens new popup, or shows existing if exists
   this.open = function(name, overwrite) {
-    var popup = this.find(name);
-    if(popup!=null&&overwrite) {
-      popup.destroy();
-      popup = null;    
+    if(name!=null) {
+      var popup = this.find(name);
+      if(popup!=null&&overwrite) {
+        popup.destroy();
+        popup = null;    
+      }
     }
     
     if(popup==null) {
       popup = new RimEditorConfigPopup();
+      if(name==null) {
+        name = (popups.length)+"_"+(Math.random()*1000);
+      }
+        
+      
       popup.name = name;
+      popup.manager = this;
+      popup.setZIndex(this.topZIndex);
       popups.push(popup);
+      //Asign focus callback to order the windows
+      popup.onfocus = function() {
+        _this.focus(this, true);
+      }   
+      //Assign callback to delete the popup
       popup.ondestroy = function() {
+        //Join the two adjacent popups in the list
+        _this.link(this.popupAbove, this.popupBelow);
+        //Delete popup from array
         popups.splice(_this.findIndex(this), 1);
       }
     }
     return popup;
   }
+  //Finds popup by name
   this.find = function(name) {
     if(name==null)
       return null;
@@ -189,6 +266,7 @@ function RimEditorPopupManager() {
       }    
     }  
   }
+  //Returns array index of a popup found by name
   this.findIndex = function(object) {
     if(name==null)
       return null;
@@ -197,6 +275,40 @@ function RimEditorPopupManager() {
         return i;
       }    
     }  
+  }
+  //Sets the z-indexes right in order
+  this.activeWindow = null;
+  this.topZIndex = 100;
+  this.bottomZIndex = 50;
+  this.focus = function(popup, fromCallback) {
+    //Nothing happens when focusing the same window
+    if(popup==this.activeWindow)
+      return;
+    //Deactivate the old top window
+    if(this.activeWindow!=null)
+      this.activeWindow.blur();
+    //Activate new top window - but not from callback, that would be endless recursion
+    if(!fromCallback)
+      popup.focus();
+    //Unlink active window from its "above window"
+    //and make a new link to close the gap that was created
+    this.link(popup.popupAbove, popup.popupBelow);
+    //active window is now at top!
+    popup.popupAbove = null;
+    //Set former top window as "below" for new top
+    this.link(popup, this.activeWindow);
+    
+    //Finally, update active window reference
+    this.activeWindow = popup;
+    //... and update z-indexes
+    popup.setZIndex(this.topZIndex);
+  }
+  //links two windows together
+  this.link = function(top, bottom) {
+    if(top!=null)
+      top.popupBelow = bottom;
+    if(bottom!=null)
+      bottom.popupAbove = top;  
   }
 }
 

@@ -365,6 +365,10 @@ div.highlight {
         I will gladly read any feedback - the editor is buggy and I have a hard time finding out where. 
         <a href="http://ludeon.com/forums/index.php?action=post;topic=1560.0">Please let me know on the forums!</a>
       </p>
+      <p>
+         <em>Please ignore this paragraph, it's just for testing.</em>
+         <a href="javascript: void(0);" onclick="var v = window.windows.open(); v.text(this.parentNode.innerHTML);v.show();">Create popup.</a>
+      </p>
     </div>
     <div id="viewport">
     
@@ -462,6 +466,33 @@ div.highlight {
       test.addClass("error");
       test.show();
     }
+    
+    window.windows = new RimEditorPopupManager();
+    
+    function isOnlineOnForums(callback) {
+      var img = document.createElement("img");
+      img.onload = function() {
+        callback(this.width>0&&this.height>0);
+      }
+      img.onerror = function() {
+        callback(false);
+      }
+      img.src = "http://ludeon.com/forums/index.php?action=dlattach;topic=1560.0;attach=696;image";
+    }
+    
+    /*isOnlineOnForums( 
+     function(is) {
+       var o = window.windows.open();
+       if(is) {
+         o.text("You're online on the forum :)");      
+       }
+       else {
+         o.text("You're not logged in to post.");
+       }
+       o.show();
+     }
+    
+    ) ;         */
     </script>                                       
   </body>
 </html>
