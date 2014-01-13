@@ -12,6 +12,10 @@ function RimEditorConfigPopup() {
   }
   popup.appendChild(close);
   
+  var caption = document.createElement("div");
+  caption.className = "caption";
+  popup.appendChild(caption);
+  
   var visible = false;
   
   //Window will be destroyed on close, not hidden
@@ -69,6 +73,10 @@ function RimEditorConfigPopup() {
     }
     this.textDiv.innerHTML = string;
   }
+  this.caption = function(text) {
+    caption.innerHTML = "";
+    caption.appendChild(document.createTextNode(text));
+  }
   /** Appearance **/
   this.addClass = function(cls) {
     popup.addClass(cls);
@@ -104,7 +112,10 @@ function RimEditorConfigPopup() {
     if(typeof this.onblur=="function") {
       this.onblur();
     }
-    popup.removeClass("active");
+    if(popup!=null)
+      popup.removeClass("active");
+    else
+      console.log(this);
     this.active = false;
   }
   /** HIDE show methods**/
@@ -148,6 +159,9 @@ function RimEditorConfigPopup() {
       delete this.ondestroy();
     }
     delete this.elements;
+    //If managed by manager, try to fill the gap and unlink self
+    /*if(this.manager!=null)
+      this.manager.link(this.popupAbove, this.popupBelow);  */
     
     window.removeEventListener("mouseup", mouseupListener);
     window.removeEventListener("mouseout", mouseoutlistener);  
@@ -248,6 +262,16 @@ function RimEditorPopupManager() {
       }   
       //Assign callback to delete the popup
       popup.ondestroy = function() {
+        //If top popup was closed, focus the one below
+        if(this==_this.activeWindow) {
+          if(this.popupBelow!=null)
+            //This as a window below, so focus it
+            this.popupBelow.focus();
+          else
+            //No window below => a last window
+            _this.activeWindow = null;
+        }
+    
         //Join the two adjacent popups in the list
         _this.link(this.popupAbove, this.popupBelow);
         //Delete popup from array
@@ -308,7 +332,19 @@ function RimEditorPopupManager() {
     if(top!=null)
       top.popupBelow = bottom;
     if(bottom!=null)
-      bottom.popupAbove = top;  
+      bottom.popupAbove = top; 
+    //this.printWindows();
+    //console.log("Link from ",top,"to", bottom); 
+  }
+  //Lists the windows in their order (using popupBelow and popupAbove referrences)
+  this.printWindows = function() {
+    var current = this.activeWindow;
+    var list = [];
+    while(current!=null) {
+      list.push(current);
+      current = current.popupBelow;
+    }
+    console.log.apply(console, list);
   }
 }
 
