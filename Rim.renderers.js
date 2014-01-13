@@ -466,7 +466,7 @@ function ProgressRenderer() {
 
   var popup = document.createElement("div");
   popup.style.textAlign = "center";
-  popup.className = "popup hidden";
+  popup.className = "popup hidden active";
   var text = popup.appendChild(document.createElement("span"));
   bar.appendTo(popup);
   
