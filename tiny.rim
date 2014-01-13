@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?><Map>
+<GameVersion>0.0.254 rev38004</GameVersion>
+<MapInfo>
+<Name>Wasteland4</Name>
+<Size>(50, 0, 50)</Size>
+<MaxThingIDIndex>4710016</MaxThingIDIndex>
+</MapInfo>
+<ColonyInfo>
+<ColonyName>Wateland</ColonyName>
+</ColonyInfo>
+<PlaySettings>
+<UseWorkPriorities>True</UseWorkPriorities>
+</PlaySettings>
+<RealTime>
+<TimeUnpaused>89691.13</TimeUnpaused>
+</RealTime>
+<GameEnder/>
+<LetterStack>
+<Letters/>
+</LetterStack>
+<CameraMap>
+<CamRootPos>(103, 0, 76)</CamRootPos>
+<DesiredSize>14.52008</DesiredSize>
+</CameraMap>
+<Resources>
+<Money>196610</Money>
+<Food>9872</Food>
+<Metal>2737</Metal>
+<Medicine>5</Medicine>
+<Uranium>7</Uranium>
+<Shells>5</Shells>
+</Resources>
+<TickManager>
+<TickCount>5243888</TickCount>
+</TickManager>
+<WeatherManager>
+<CurWeather Class="Weather_Clear"/>
+<LastWeather Class="Weather_Clear"/>
+<ticksSinceTransition>1132</ticksSinceTransition>
+</WeatherManager>
+<ResearchManager>
+<CurrentProject>None</CurrentProject>
+<ProjectList>
+<ResearchProject Class="ResearchProject">
+<RType>Hydroponics</RType>
+<Label>Hydroponics</Label>
+<Progress>22000.99</Progress>
+<TotalCost>22000</TotalCost>
+<Description>Allows you to build hydroponics tables to rapidly grow crops indoors.</Description>
+</ResearchProject>
+<ResearchProject Class="ResearchProject">
+<RType>PneumaticPicks</RType>
+<Label>Pneumatic picks</Label>
+<Progress>30000.35</Progress>
+<TotalCost>30000</TotalCost>
+<Description>Miner's picks are 20% more effective.</Description>
+</ResearchProject>
+<ResearchProject Class="ResearchProject">
+<RType>NutrientResynthesis</RType>
+<Label>Nutrient resynthesis</Label>
+<Progress>22001.29</Progress>
+<TotalCost>22000</TotalCost>
+<Description>Nutrient paste dispensers consume 10% less food per meal produced.</Description>
+</ResearchProject>
+<ResearchProject Class="ResearchProject">
+<RType>GunTurretCooling</RType>
+<Label>Gun turret cooling</Label>
+<Progress>35001.22</Progress>
+<TotalCost>35000</TotalCost>
+<Description>Gun turrets fire four shots in a burst instead of three.</Description>
+</ResearchProject>
+<ResearchProject Class="ResearchProject">
+<RType>BlastingCharges</RType>
+<Label>Blasting charges</Label>
+<Progress>15001.37</Progress>
+<TotalCost>15000</TotalCost>
+<Description>Allows building Blasting Charges, triggered explosives made to quickly reduce rock to rubble.</Description>
+</ResearchProject>
+<ResearchProject Class="ResearchProject">
+<RType>CarpetMaking</RType>
+<Label>Carpet making</Label>
+<Progress>15000.74</Progress>
+<TotalCost>15000</TotalCost>
+<Description>Allows colonists to build carpets to increase the quality of their environments.</Description>
+</ResearchProject>
+<ResearchProject Class="ResearchProject">
+<RType>FearTech1</RType>
+<Label>Fear tech 1</Label>
+<Progress>9001.38</Progress>
+<TotalCost>9000</TotalCost>
+<Description>Research new ways to inspire fear.</Description>
+</ResearchProject>
+</ProjectList>
+</ResearchManager>
+<Storyteller Class="Storyteller_Random">
+<AnimalSpawner/>
+<IncidentQueue>
+<QueuedIncidents/>
+</IncidentQueue>
+<WeatherDecider>
+<LastWeatherStartTick>5242757</LastWeatherStartTick>
+</WeatherDecider>
+<StoryState>
+<LastThreatQueueTime>-1</LastThreatQueueTime>
+<NumThreatsQueued>0</NumThreatsQueued>
+<LastQueueTicks>
+<KeyList/>
+<ValueList/>
+</LastQueueTicks>
+</StoryState>
+<IntenderPopulation>
+<LastPopGainTime>5074368</LastPopGainTime>
+</IntenderPopulation>
+</Storyteller>
+<ReservationManager>
+<Reservations>
+</Reservations>
+</ReservationManager>
+<DesignationManager>
+<DesignationList>
+</DesignationList>
+</DesignationManager>
+<AIKingManager>
+<KingList/>
+</AIKingManager>
+<VisitorManager>
+<VisitorList/>
+</VisitorManager>
+<Tutor>
+<UnusedItemNamed>
+<String>MapPointer_MineMinerals</String>
+<String>MapPointer_Unforbid_Food</String>
+<String>MapPointer_Unforbid_Metal</String>
+<String>MapPointer_TakeGun</String>
+<String>TutorNote_IntroA</String>
+<String>TutorNote_IntroB</String>
+<String>TutorNote_Codex</String>
+<String>TutorNote_Pause</String>
+<String>TutorNote_WorkSettingsA</String>
+<String>TutorNote_WorkSettingsB</String>
+<String>TutorNote_MiningA</String>
+<String>TutorNote_MiningB</String>
+<String>TutorNote_WorkOverview</String>
+<String>TutorNote_CaptureEnemy</String>
+<String>TutorNote_CaptureEnemyB</String>
+<String>TutorNote_CombatIntro</String>
+<String>TutorNote_CombatIntroB</String>
+<String>TutorNote_PrisonerHandlingA</String>
+<String>TutorNote_FireExtinguishing</String>
+</UnusedItemNamed>
+<ActivePointers/>
+<ActiveNote IsNull="True"/>
+</Tutor>
+<MapConditionManager>
+<ActiveConditions/>
+</MapConditionManager>
+<RoomManager>
+<RoomList>
+</RoomList>
+</RoomManager>
+<FogGrid>
+<Fog>Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8/Pz8AAAAAAAAAAAMAAAAAAAAADAAAAAAAAAAwGBwcPDg4OD8jMTExIyMjPw8GBwcPDg4+PwAAAAAAADg/AwAAAAAAID8PAAAAAAAAPj8YHBw8ODg4PyMxMTEjIyM/DwAAAAAAAD4/AAAAAAAAOD8DAAAAAAAgPw8GBwcPDg4+PxgcHDw4ODg/AwAAAAAAID8PAAAAAAAAPj8AAAAAAAA4PyMxMTEjIyM/DwYHBw8ODj4/AAAAAAAAOD8DAAAAAAAgPw8AAAAAAAA+PxgcHDw4ODg/IzExMSMjIz8PAAAAAAAAPj8AAAAAAAA4PwMAAAAAACA/DwYHBw8ODj4/GBwcPDg4OD8DAAAAAAAgPw8AAAAAAAA+PwAAAAAAADg/IzExMSMjIz8PBgcHDw4OPj8AAAAAAAA4PwMAAAAAACA/DwAAAAAAAD4=</Fog>
+</FogGrid>
+<RoofGrid>
+<Roofs>FxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFw==</Roofs>
+</RoofGrid>
+<TerrainGrid>
+<TerrainMap>HR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwdHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHB0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHB0dHR0dHB0dHR0dHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHB0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHB0dHR0dHB0dHR0dHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwdHR0dHR0dHR0dHR0dHB0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHB0dHR0dHB0dHR0dHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHB0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHB0dHR0dHB0dHR0dHB0dHR0dHR0dHR0dHR0cHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHB0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHB0dHR0dHB0dHR0dHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHB0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHB0dHR0dHB0dHR0dHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwdHR0dHR0dHR0dHR0dHB0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHB0dHR0dHB0dHR0dHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHB0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHB0dHR0dHB0dHR0dHB0dHR0dHR0dHR0dHR0cHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHB0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHB0dHR0dHB0dHR0dHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHR0dHRwdHR0dHB0dHR0dHB0dHR0dHB0dHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0dHR0dHR0dHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHB0dHR0dHR0dHR0dHR0cHR0dHRwdHR0dHRwdHR0dHRwdHR0dHR0cHR0dHR0cHR0dHR0cHR0dHR0dHR0dHQ==</TerrainMap>
+</TerrainGrid>
+<CleanGrid>
+<CleanGrid>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</CleanGrid>
+</CleanGrid>
+<HistoricalPawns/>
+<CompressedThingMap>NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1NTUANTU1NQA1NTU1NQA1NTU1NQA1NTU1NTUANTU1NTUANTU1NTUANTU1NTU1NTU1NTU1NQA1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NQA1NTU1NQA1NTU1NQA1NTU1NTU1NTU1NTU1ADU1NTUANTU1NTUANTU1NTUANTU1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NTU1NTU1NTUANTU1NQA1NTU1NQA1NTU1NQA1NTU1NTUANTU1NTUANTU1NTUANTU1NTU1NTU1NTU1NQA1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NQA1NTU1NQA1NTU1NQA1NTU1NTU1NTU1NTU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADU1NTU1NTU1NTU1NTUANTU1NQA1NTU1NQA1NTU1NQA1NTU1NTUANTU1NTUANTU1NTUANTU1NTU1NTU1NTU1NQA1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NQA1NTU1NQA1NTU1NQA1NTU1NTU1NTU1NTU1ADU1NTUANTU1NTUANTU1NTUANTU1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NTU1NTU1NTUANTU1NQA1NTU1NQA1NTU1NQA1NTU1NTUANTU1NTUANTU1NTUANTU1NTU1NTU1NTU1NQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1NTU1NTU1NTU1NTU1ADU1NTUANTU1NTUANTU1NTUANTU1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NTU1NTU1NTUANTU1NQA1NTU1NQA1NTU1NQA1NTU1NTUANTU1NTUANTU1NTUANTU1NTU1NTU1NTU1NQA1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NQA1NTU1NQA1NTU1NQA1NTU1NTU1NTU1NTU1ADU1NTUANTU1NTUANTU1NTUANTU1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NTU1NTU1NTUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANTU1NTU1NTU1NTU1NQA1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NQA1NTU1NQA1NTU1NQA1NTU1NTU1NTU1NTU1ADU1NTUANTU1NTUANTU1NTUANTU1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NTU1NTU1NTUANTU1NQA1NTU1NQA1NTU1NQA1NTU1NTUANTU1NTUANTU1NTUANTU1NTU1NTU1NTU1NQA1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NQA1NTU1NQA1NTU1NQA1NTU1NTU1NTU1NTU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADU1NTU1NTU1NTU1NTUANTU1NQA1NTU1NQA1NTU1NQA1NTU1NTUANTU1NTUANTU1NTUANTU1NTU1NTU1NTU1NQA1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NQA1NTU1NQA1NTU1NQA1NTU1NTU1NTU1NTU1ADU1NTUANTU1NTUANTU1NTUANTU1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NTU1NTU1NTUANTU1NQA1NTU1NQA1NTU1NQA1NTU1NTUANTU1NTUANTU1NTUANTU1NTU2NjY1NTU1NQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1NTU1NTY2NjY1NTU1ADU1NTUANTU1NTUANTU1NTUANTU1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NjY2NjY1NTUANTU1NQA1NTU1NQA1NTU1NQA1NTU1NTUANTU1NTUANTU1NTUANTU1NTY2NjY2NjU1NQA1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NQA1NTU1NQA1NTU1NQA1NTU1NjY2NjY2NTU1ADU1NTUANTU1NTUANTU1NTUANTU1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NjY2NjY1NTUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANTU1NTU1NTU1NTU1NQA1NTU1ADU1NTU1ADU1NTU1ADU1NTU1NQA1NTU1NQA1NTU1NQA1NTU1NTU1NTU1NTU1ADU1NTUANTU1NTUANTU1NTUANTY2NjY1ADU1NTU1ADU1NTU1ADU1NTU1NTU1NTU1NTUANTU1NQA1NTU1NQA1NTU1NQA1NjY2NjYANTU1NTUANTU1NTUANTU1NTU1NTU1NTU1NQA1NTU1ADU1NTU1ADU1NTU1ADY2NjY2NgA1NTU1NQA1NTU1NQA1NTU1NTU1NTU1NTU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADU1NTU1NTU1NTU1NTUANTU1NQA1NTU1NQA1NTU1NQA2NjY2NjUANTU1NTUANTU1NTUANTU1NTU1NTU1NQ==</CompressedThingMap>
+<Things>
+		<Thing Class="Pawn">
+			<Def>Pawn</Def>
+			<ID>Pawn4710017</ID>
+			<Pos>(24, 0, 183)</Pos>
+			<Rot>2</Rot>
+			<Team>Colonist</Team>
+			<Kind>Colonist</Kind>
+			<CharacterName>Human</CharacterName>
+			<Age>39</Age>
+			<CarriedThing IsNull="True" />
+			<Drawer>
+				<Renderer>
+					<BodyName>Dennis</BodyName>
+					<HeadName>Bob</HeadName>
+				</Renderer>
+			</Drawer>
+			<HealthTracker>
+				<PawnHealth>100</PawnHealth>
+				<TicksToNextHeal>552</TicksToNextHeal>
+			</HealthTracker>
+			<Mind Class="Pawn_MindHuman">
+				<MindState>
+					<LastJobTag>Idle</LastJobTag>
+					<EnemyTarget>null</EnemyTarget>
+				</MindState>
+				<WorkSettings>
+					<WorkPriorities>
+						<KeyList>
+							<WorkType>Firefighter</WorkType>
+							<WorkType>Construction</WorkType>
+							<WorkType>Repair</WorkType>
+							<WorkType>Growing</WorkType>
+							<WorkType>Mining</WorkType>
+							<WorkType>PlantCutting</WorkType>
+							<WorkType>Hauling</WorkType>
+							<WorkType>Cleaning</WorkType>
+						</KeyList>
+						<ValueList>
+							<Int32>4</Int32>
+							<Int32>4</Int32>
+							<Int32>4</Int32>
+							<Int32>4</Int32>
+							<Int32>4</Int32>
+							<Int32>4</Int32>
+							<Int32>4</Int32>
+							<Int32>4</Int32>
+						</ValueList>
+					</WorkPriorities>
+				</WorkSettings>
+			</Mind>
+			<Jobs>
+				<CurJob>
+					<JType>Goto</JType>
+					<TargetA>
+						<TargetThing>null</TargetThing>
+						<TargetLoc>(24, 0, 181)</TargetLoc>
+					</TargetA>
+					<TargetB IsNull="True" />
+				</CurJob>
+				<CurJobDriver Class="JobDriver_Goto" />
+			</Jobs>
+			<Pather>
+				<Moving>True</Moving>
+				<NextSquare>(24, 0, 182)</NextSquare>
+				<TicksUntilMove>34</TicksUntilMove>
+				<TotalMoveDuration>42</TotalMoveDuration>
+				<Destination>
+					<TargetThing>null</TargetThing>
+					<TargetLoc>(24, 0, 181)</TargetLoc>
+				</Destination>
+			</Pather>
+			<Equipment>
+				<Primary IsNull="True" />
+				<Secondaries />
+			</Equipment>
+			<Inventory>
+				<InventoryList />
+			</Inventory>
+			<Filth>
+				<CarriedFilth>
+					<Filth Class="Filth">
+						<Def>FilthDirt</Def>
+						<ID>FilthDirt4722784</ID>
+						<Thickness>1</Thickness>
+						<Sources />
+					</Filth>
+				</CarriedFilth>
+			</Filth>
+			<Food>
+				<PieceFood>
+					<CurLevel>50.0101</CurLevel>
+					<TicksToNextStarveDamage > 2804 </TicksToNextStarveDamage> 
+				</PieceFood>
+			</Food>
+			<Rest>
+				<PieceRest>
+					<CurLevel>39.74253</CurLevel>
+				</PieceRest>
+			</Rest>
+			<Psychology>
+				<LoyaltyBase>
+					<CurLevel>40.26126</CurLevel>
+				</LoyaltyBase>
+				<PieceHappiness>
+					<CurLevel>40.25983</CurLevel>
+				</PieceHappiness>
+				<PieceFear>
+					<CurLevel>33.20939</CurLevel>
+				</PieceFear>
+				<PieceEnvironment>
+					<CurLevel>62</CurLevel>
+				</PieceEnvironment>
+				<PieceOpenness>
+					<CurLevel>41.5</CurLevel>
+				</PieceOpenness>
+				<ThoughtHandler>
+					<ThoughtList>
+						<Thought Class="Thought">
+							<ThoughtType>EnvironmentBeautiful</ThoughtType>
+							<Age>0</Age>
+						</Thought>
+						<Thought Class="Thought">
+							<ThoughtType>EnvironmentPretty</ThoughtType>
+							<Age>0</Age>
+						</Thought>
+					</ThoughtList>
+				</ThoughtHandler>
+			</Psychology>
+			<Prisoner IsNull="True" />
+			<Ownership IsNull="True" />
+			<Talker>
+				<LastTalkTime>5243560</LastTalkTime>
+			</Talker>
+			<Skills>
+				<Level_Construction>5</Level_Construction>
+				<XpSinceLastLevel_Construction>0</XpSinceLastLevel_Construction>
+				<Level_Growing>10</Level_Growing>
+				<XpSinceLastLevel_Growing>0</XpSinceLastLevel_Growing>
+				<Level_Research>5</Level_Research>
+				<XpSinceLastLevel_Research>0</XpSinceLastLevel_Research>
+				<Level_Mining>5</Level_Mining>
+				<XpSinceLastLevel_Mining>0</XpSinceLastLevel_Mining>
+				<Level_Shooting>5</Level_Shooting>
+				<XpSinceLastLevel_Shooting>0</XpSinceLastLevel_Shooting>
+				<Level_Melee>5</Level_Melee>
+				<XpSinceLastLevel_Melee>0</XpSinceLastLevel_Melee>
+				<Level_Social>5</Level_Social>
+				<XpSinceLastLevel_Social>0</XpSinceLastLevel_Social>
+				<Level_Cooking>5</Level_Cooking>
+				<XpSinceLastLevel_Cooking>0</XpSinceLastLevel_Cooking>
+				<Level_Medicine>5</Level_Medicine>
+				<XpSinceLastLevel_Medicine>0</XpSinceLastLevel_Medicine>
+				<Level_Artistic>5</Level_Artistic>
+				<XpSinceLastLevel_Artistic>0</XpSinceLastLevel_Artistic>
+				<Level_Crafting>5</Level_Crafting>
+				<XpSinceLastLevel_Crafting>0</XpSinceLastLevel_Crafting>
+			</Skills>
+			<Story>
+				<StoryItems>
+					<Int32>4</Int32>
+					<Int32>5</Int32>
+				</StoryItems>
+			</Story>
+			<Traits>
+				<TraitList>
+					<Trait Class="Trait">
+						<DefName>Leader</DefName>
+					</Trait>
+					<Trait Class="Trait">
+						<DefName>Tough</DefName>
+					</Trait>
+				</TraitList>
+			</Traits>
+	  </Thing>
+		<Thing Class="Pawn">
+			<Def>Pawn</Def>
+			<ID>Pawn25924</ID>
+			<Pos>(55, 0, 160)</Pos>
+			<Rot>3</Rot>
+			<Kind>Muffalo</Kind>
+			<CharacterName>Muffalo</CharacterName>
+			<Age>15</Age>
+			<CarriedThing IsNull="True" />
+			<Drawer>
+				<Renderer>
+					<BodyName>Muffalo</BodyName>
+				</Renderer>
+			</Drawer>
+			<HealthTracker>
+				<PawnHealth>160</PawnHealth>
+			</HealthTracker>
+			<Mind Class="Pawn_MindAnimal">
+				<MindState>
+					<EnemyTarget>null</EnemyTarget>
+				</MindState>
+			</Mind>
+			<Jobs>
+				<CurJob>
+					<JType>EatFood</JType>
+					<TargetA>
+						<TargetThing>PlantPovertyGrass4398335</TargetThing>
+					</TargetA>
+					<TargetB IsNull="True" />
+				</CurJob>
+				<CurJobDriver Class="JobDriver_FoodEat">
+					<CurToilIndex>1</CurToilIndex>
+					<TicksInToil>281</TicksInToil>
+					<CurToilCompleteMode>Delay</CurToilCompleteMode>
+				</CurJobDriver>
+			</Jobs>
+			<Pather>
+				<Moving>False</Moving>
+				<NextSquare>(55, 0, 160)</NextSquare>
+				<TotalMoveDuration>46</TotalMoveDuration>
+			</Pather>
+			<Equipment>
+				<Primary IsNull="True" />
+				<Secondaries />
+			</Equipment>
+			<Inventory>
+				<InventoryList />
+			</Inventory>
+			<Filth>
+				<CarriedFilth>
+					<Filth Class="Filth">
+						<Def>FilthSand</Def>
+						<ID>FilthSand4709707</ID>
+						<Thickness>1</Thickness>
+						<Sources />
+					</Filth>
+				</CarriedFilth>
+			</Filth>
+			<Food>
+				<PieceFood>
+					<CurLevel>79.13013</CurLevel>
+				</PieceFood>
+			</Food>
+			<Rest IsNull="True" />
+			<Psychology IsNull="True" />
+			<Prisoner IsNull="True" />
+			<Ownership IsNull="True" />
+			<Talker IsNull="True" />
+			<Skills IsNull="True" />
+			<Story IsNull="True" />
+			<Traits>
+				<TraitList />
+			</Traits>
+		</Thing>
+</Things>
+</Map>

@@ -1,0 +1,66 @@
+/* DESIGN STYLE */
+div.progressbar {
+  border: 1px solid black;
+  background-color: #444444;
+  padding: 3px;
+}
+div.progressbar div {
+   background-color: #517AFF;
+   height: 20px;
+}
+div.progressbar.finished div {
+   background-color: green;
+}
+div.progressbar.error div {
+   background-color: red;
+}
+div.progressbar span {
+   color:black;         
+   font-weight: bold;
+}
+
+div.progressbar.disabled span {
+   color: white;
+}
+
+div.progressbar.disabled div {
+   background-color: #666;
+}
+div.progressbar.pending div {
+   background: #0dc900; /* Old browsers */
+   background: -moz-radial-gradient(center, ellipse cover,  #0dc900 0%, #021100 100%); /* FF3.6+ */
+   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#0dc900), color-stop(100%,#021100)); /* Chrome,Safari4+ */
+   background: -webkit-radial-gradient(center, ellipse cover,  #0dc900 0%,#021100 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-radial-gradient(center, ellipse cover,  #0dc900 0%,#021100 100%); /* Opera 12+ */
+   background: -ms-radial-gradient(center, ellipse cover,  #0dc900 0%,#021100 100%); /* IE10+ */
+   background: radial-gradient(ellipse at center,  #0dc900 0%,#021100 100%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc900', endColorstr='#021100',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}    
+/* FUNCTIONALITY STYLE */
+div.progressbar {
+   position:relative;
+}
+
+div.progressbar div {
+   width: 0%; /* Adjust with JavaScript */
+   text-align: center;
+}
+div.progressbar.pending {
+   text-align: center;
+}
+div.progressbar.pending div {
+   margin-left:auto;
+   margin-right:auto;
+}
+div.progressbar.pending span {
+   display:none;
+}
+div.progressbar.disabled span {
+}
+
+div.progressbar span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}

@@ -1,0 +1,108 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+RimEdit
+	+svety
+		..\..\..\Users\Jakub\AppData\LocalLow\Ludeon Studios\RimWorld\Wasteland4.rim
+	+ostatni
+		index.php
+		docs.php
+		updatelibs.php
+	+js
+		Rim.class.js
+		Rim.renderers.js
+		pagetools.js
+		Rim.tools.js
+		Rim.popups.js
+		tiles.js
+		Rim.things.js
+	+External
+		..\classes\tooltip\tooltip.class.js
+[Open project files]
+0=index.php
+1=Rim.class.js
+2=..\..\..\Users\Jakub\AppData\LocalLow\Ludeon Studios\RimWorld\Wasteland4.rim
+3=docs.php
+4=updatelibs.php
+5=..\classes\tooltip\tooltip.class.js
+6=Rim.renderers.js
+7=Rim.popups.js
+8=pagetools.js
+9=Rim.tools.js
+10=tiles.js
+11=Rim.things.js
+12=..\classes\progress\Progressbar.class.js
+13=..\..\..\Users\Jakub\AppData\LocalLow\Ludeon Studios\RimWorld\newtype.rim
+14=Rim.parsers.js
+15=..\..\..\Users\Jakub\AppData\LocalLow\Ludeon Studios\RimWorld\newparser.rim
+[Selected Project Files]
+Main=Rim.class.js
+Selected=Rim.class.js
+[index.php]
+TopLine=447
+Caret=5,457
+[Rim.class.js]
+TopLine=188
+Caret=15,198
+BookMark1=7,428
+BookMark2=5,222
+BookMark3=19,711
+BookMark4=29,479
+[..\..\..\Users\Jakub\AppData\LocalLow\Ludeon Studios\RimWorld\Wasteland4.rim]
+TopLine=1
+Caret=3,3
+BookMark1=25,9126
+BookMark2=14,47260
+BookMark3=26,6102
+BookMark4=6,24478
+BookMark5=25,4274
+BookMark6=17,13819
+[docs.php]
+TopLine=9
+Caret=30,20
+[updatelibs.php]
+TopLine=3
+Caret=35,15
+[..\classes\tooltip\tooltip.class.js]
+TopLine=27
+Caret=66,48
+[Rim.renderers.js]
+TopLine=323
+Caret=35,352
+[Rim.popups.js]
+TopLine=532
+Caret=24,545
+[pagetools.js]
+TopLine=1
+Caret=31,19
+[Rim.tools.js]
+TopLine=242
+Caret=52,406
+[tiles.js]
+TopLine=1
+Caret=31,19
+[Rim.things.js]
+TopLine=484
+Caret=3,535
+BookMark1=17,184
+[..\classes\progress\Progressbar.class.js]
+TopLine=1
+Caret=7,169
+[..\..\..\Users\Jakub\AppData\LocalLow\Ludeon Studios\RimWorld\newtype.rim]
+TopLine=172
+Caret=11,251
+[Rim.parsers.js]
+TopLine=33
+Caret=45,149
+[..\..\..\Users\Jakub\AppData\LocalLow\Ludeon Studios\RimWorld\newparser.rim]
+TopLine=420794
+Caret=17,420817
