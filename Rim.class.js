@@ -146,7 +146,7 @@ function RimWorld() {
   }
   
   this.showMap = function() {
-    document.body.appendChild(display);
+    document.getElementById('viewport').appendChild(display);
     if(this.renderer==null) {
       this.renderer = new RimWorldMapRenderer(this.map, display);
     }
@@ -218,6 +218,39 @@ function RimWorld() {
     this.tools.addTool(rock);
 
     this.tools.addTool(new RimEditorFogChanger("Fog of war", null, "images/dark.png", this.map));
+
+    var scale = 1; //default scale = 1:1
+    var changeScale = function (newScale) {
+      display.style.webkitTransform = "scale(" + scale + ")";
+      display.style.MozTransform  = "scale(" + scale + ")";
+      display.style.msTransform  = "scale(" + scale + ")";
+      display.style.OTransform  = "scale(" + scale + ")";
+      display.style.transform = "scale(" + scale + ")";
+    };
+
+    var zoom = new RimEditorToolset();
+    zoom.onclick = function() {return false;};
+    zoom.title = "zoom map";
+    zoom.image = "images/zoom_in.png";
+    zoomin = new RimEditorTool();
+    zoomin.onclick = function(){
+      scale = scale + 0.1;
+      changeScale(scale);
+    };
+    zoomin.title = "Zoom In";
+    zoomin.image = "images/zoom_in.png";
+    zoom.addTool(zoomin);
+
+    zoomout = new RimEditorTool();
+    zoomout.onclick = function(){
+      scale = scale - 0.1;
+      changeScale(scale);
+    };
+    zoomout.title = "Zoom Out";
+    zoomout.image = "images/zoom_out.png";
+    zoom.addTool(zoomout);
+    this.tools.addTool(zoom);
+
 
     var money = new RimEditorTool();
     money.title = "Edit player resources";
